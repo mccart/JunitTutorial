@@ -58,6 +58,7 @@ public class TestParameterize {
 		expectedResult[4][3] = "Unidad de Fomento";
 
 		expectedResult[5][0] = "CHW";
+//		expectedResult[5][1] = "948";
 		expectedResult[5][1] = "9148";
 		expectedResult[5][2] = "2";
 		expectedResult[5][3] = "WIR Franc";

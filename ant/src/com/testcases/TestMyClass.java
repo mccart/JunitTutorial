@@ -1,5 +1,6 @@
 package com.testcases;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import junit.framework.TestCase;
@@ -12,7 +13,7 @@ public class TestMyClass extends TestCase {
 	}
 	
 	@Override
-	 protected  void tearDown(){
+	 protected void tearDown(){
 		System.err.println("=========Tear Down=======");
 	}
 	
@@ -25,5 +26,4 @@ public class TestMyClass extends TestCase {
 	public void testCaseTwo(){
 		System.out.println("======Test Case Two=======");
 	}
-
 }

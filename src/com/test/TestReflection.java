@@ -4,26 +4,38 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import com.reflection.ReflectionClass;
+
 
 public class TestReflection {
 
 	
-	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+	public static void main(String[] args) throws 
+		ClassNotFoundException, InstantiationException, IllegalAccessException, 
+		NoSuchMethodException, SecurityException, IllegalArgumentException, 
+		InvocationTargetException, NoSuchFieldException {
+/*		
+		ReflectionClass obj = new ReflectionClass();
+		obj.setPublic_name("Public Data Member");
+		System.out.println(obj.getPublic_name());
+		
+*/
 		Class cls = Class.forName("com.reflection.ReflectionClass"); //step - 1
 		Object obj = cls.newInstance(); //step - 2
 		
 		Method set_private = cls.getDeclaredMethod("setPrivate_name", String.class); //step - 3
 		set_private.setAccessible(true); // step - 4
 		set_private.invoke(obj, "Private Data Member - 1");
-		
+/*		
 		Field private_name = cls.getDeclaredField("private_name");
 		private_name.setAccessible(true);
 		System.out.println("Value : " + private_name.get(obj));
+*/		
 		
-		/*Method get_private = cls.getDeclaredMethod("getPrivate_name", null);
+		Method get_private = cls.getDeclaredMethod("getPrivate_name", null);
 		get_private.setAccessible(true);
 		System.out.println("Value :  " + get_private.invoke(obj, null));
-		
+/*
 		Method set_protected = cls.getDeclaredMethod("setProtected_name", String.class);
 		set_protected.setAccessible(true);
 		set_protected.invoke(obj, "Protected Data Memeber");

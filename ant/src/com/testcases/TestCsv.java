@@ -85,8 +85,10 @@ public class TestCsv extends Assert {
 	@BeforeClass
 	public static void setUp() {
 		try {
+			
 //			reader = new CsvReader("C:\\Users\\Family\\Projects\\Junit\\src\\com\\resources\\data.csv");
 //			count = new CsvReader("C:\\Users\\Family\\Projects\\Junit\\src\\com\\resources\\data.csv");
+			
 			reader = new CsvReader(getPath());
 			count = new CsvReader(getPath());
 			
