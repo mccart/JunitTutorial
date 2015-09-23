@@ -5,7 +5,7 @@ import org.junit.Test;
 import com.mapper.CodeProperties;
 import com.mapper.CodePropertiesLookup;
 
-public class TestRunListenerError{
+public class Test06_RunListenerError{
 	
 	@Test()
 	public void testInvalidCode() {	// IllegalArgumentException

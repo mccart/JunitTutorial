@@ -2,14 +2,14 @@ testIsoCode Started its Execution
 testIsoCode Finished its Execution
 ======================================================
 testNumCodeTwo Started its Execution
-testNumCodeTwo(com.testcases.TestRunListenerJunit)
+testNumCodeTwo(com.testcases.Test06_RunListenerJunit)
 expected:<0> but was:<-1>
 java.lang.AssertionError: expected:<0> but was:<-1>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
 	at org.junit.Assert.assertEquals(Assert.java:631)
-	at com.testcases.TestRunListenerJunit.testNumCodeTwo(TestRunListenerJunit.java:49)
+	at com.testcases.Test06_RunListenerJunit.testNumCodeTwo(Test06_RunListenerJunit.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -39,17 +39,17 @@ java.lang.AssertionError: expected:<0> but was:<-1>
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
-	at com.testcases.TestRunListenerRunner.main(TestRunListenerRunner.java:28)
+	at com.testcases.Test06_RunListenerRunner.main(Test06_RunListenerRunner.java:28)
 
 testNumCodeTwo Finished its Execution
 ======================================================
 testNumCode Started its Execution
-testNumCode(com.testcases.TestRunListenerJunit)
+testNumCode(com.testcases.Test06_RunListenerJunit)
 expected:<952[1]> but was:<952[]>
 org.junit.ComparisonFailure: expected:<952[1]> but was:<952[]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.testcases.TestRunListenerJunit.testNumCode(TestRunListenerJunit.java:31)
+	at com.testcases.Test06_RunListenerJunit.testNumCode(Test06_RunListenerJunit.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -79,7 +79,7 @@ org.junit.ComparisonFailure: expected:<952[1]> but was:<952[]>
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
-	at com.testcases.TestRunListenerRunner.main(TestRunListenerRunner.java:28)
+	at com.testcases.Test06_RunListenerRunner.main(Test06_RunListenerRunner.java:28)
 
 testNumCode Finished its Execution
 ======================================================
@@ -88,7 +88,7 @@ timeTest(com.testcases.TestError)
 test timed out after 100 milliseconds
 org.junit.runners.model.TestTimedOutException: test timed out after 100 milliseconds
 	at java.lang.Thread.sleep(Native Method)
-	at com.testcases.TestError.timeTest(TestError.java:61)
+	at com.testcases.TestError.timeTest(TestError.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,10 +108,22 @@ testAlfaNumerciCode Started its Execution
 testAlfaNumerciCode Finished its Execution
 ======================================================
 testInvalidCode Started its Execution
-testInvalidCode(com.testcases.TestError)
-Unexpected exception, expected<java.lang.NullPointerException> but was<java.lang.IllegalArgumentException>
-java.lang.Exception: Unexpected exception, expected<java.lang.NullPointerException> but was<java.lang.IllegalArgumentException>
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
+testInvalidCode Finished its Execution
+======================================================
+failTest Started its Execution
+failTest(com.testcases.TestError)
+Failed By User
+java.lang.AssertionError: Failed By User
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.testcases.TestError.failTest(TestError.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -133,23 +145,9 @@ java.lang.Exception: Unexpected exception, expected<java.lang.NullPointerExcepti
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
-	at com.testcases.TestRunListenerRunner.main(TestRunListenerRunner.java:28)
-Caused by: java.lang.IllegalArgumentException: Invalid currency code : ABC
-	at com.mapper.CodeMapper.getCodeProperties(CodeMapper.java:23)
-	at com.mapper.CodePropertiesLookup.getCodeProperties(CodePropertiesLookup.java:87)
-	at com.testcases.TestError.testInvalidCode(TestError.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
-	... 22 more
+	at com.testcases.Test06_RunListenerRunner.main(Test06_RunListenerRunner.java:28)
 
-testInvalidCode Finished its Execution
+failTest Finished its Execution
 ======================================================
 testCase1 Started its Execution
 testCase1 Finished its Execution
@@ -201,7 +199,7 @@ org.junit.ComparisonFailure: expected:<[]XOF> but was:<[a]XOF>
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
-	at com.testcases.TestRunListenerRunner.main(TestRunListenerRunner.java:28)
+	at com.testcases.Test06_RunListenerRunner.main(Test06_RunListenerRunner.java:28)
 
 testNumCode Finished its Execution
 ======================================================
@@ -210,10 +208,8 @@ testCase Finished its Execution
 ======================================================
 testIsoCode Started its Execution
 testIsoCode(com.testcases.TestCsv)
-expected:<[]Kwanza> but was:<[a]Kwanza>
-org.junit.ComparisonFailure: expected:<[]Kwanza> but was:<[a]Kwanza>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
+null
+java.lang.NullPointerException
 	at com.testcases.TestCsv.testIsoCode(TestCsv.java:121)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -246,10 +242,47 @@ org.junit.ComparisonFailure: expected:<[]Kwanza> but was:<[a]Kwanza>
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
-	at com.testcases.TestRunListenerRunner.main(TestRunListenerRunner.java:28)
+	at com.testcases.Test06_RunListenerRunner.main(Test06_RunListenerRunner.java:28)
 
 testIsoCode Finished its Execution
 ======================================================
 testNumCode Started its Execution
+testNumCode(com.testcases.TestCsv)
+null
+java.lang.NullPointerException
+	at com.testcases.TestCsv.testNumCode(TestCsv.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at com.testcases.Test06_RunListenerRunner.main(Test06_RunListenerRunner.java:28)
+
 testNumCode Finished its Execution
 ======================================================

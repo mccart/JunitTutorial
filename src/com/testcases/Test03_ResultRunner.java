@@ -2,13 +2,13 @@ package com.testcases;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 
-public class TestResultRunner {
+public class Test03_ResultRunner {
 	
 	// http://junit-team.github.io/junit/javadoc/latest/
 	
 	public static void main(String[] args) {
 		
-		Result result = JUnitCore.runClasses(TestResultJunit.class);
+		Result result = JUnitCore.runClasses(Test03_ResultJunit.class);
 		
 		System.out.println("------------------ From Result ----------------");
 	

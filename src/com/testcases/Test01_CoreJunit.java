@@ -1,7 +1,8 @@
 package com.testcases;
 import org.junit.Test;
+//import org.junit.runner.JUnitCore;
 
-public class TestCoreJunit {
+public class Test01_CoreJunit {
 
 	@Test
 	public void testCaseOne() {
@@ -21,8 +22,10 @@ public class TestCoreJunit {
 		System.out.println("Test Case Three");
 //		fail("Not yet implemented");
 	}
-//
+
+//	moved to runner...
 //	public static void main(String[] args) {
-//		JUnitCore.runClasses(TestJunit.class);
+//		JUnitCore.runClasses(Test01_CoreJunit.class);
 //	}
+	
 }

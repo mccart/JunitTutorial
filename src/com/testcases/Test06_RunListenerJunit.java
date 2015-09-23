@@ -7,7 +7,7 @@ import com.mapper.CodeProperties;
 import com.mapper.CodePropertiesLookup;
 
 // note extends org.junit.Assert
-public class TestRunListenerJunit extends Assert {
+public class Test06_RunListenerJunit extends Assert {
 	
 	@Test
 	public void testIsoCode() {

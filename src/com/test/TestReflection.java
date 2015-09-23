@@ -49,10 +49,7 @@ public class TestReflection {
 		
 		Method get_public = cls.getMethod("getPublic_name", null);
 		System.out.println("Value : " + get_public.invoke(obj, null));*/
-		
-		
 	
-
 	}
 
 }

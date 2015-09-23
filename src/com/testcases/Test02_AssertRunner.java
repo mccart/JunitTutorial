@@ -1,12 +1,12 @@
 package com.testcases;
 import org.junit.runner.JUnitCore;
 
-public class TestCoreRunner {
+public class Test02_AssertRunner {
 	
 	// http://junit-team.github.io/junit/javadoc/latest/
 	
 	public static void main(String[] args) {
-		JUnitCore.runClasses(TestCoreJunit.class);
+		JUnitCore.runClasses(Test02_AssertJunit.class);
 	}
 	
 //	You might want to take a look at the following bundle repositories:

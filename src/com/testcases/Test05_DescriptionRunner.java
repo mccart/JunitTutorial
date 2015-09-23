@@ -7,13 +7,16 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-public class TestFailureRunner {
+public class Test05_DescriptionRunner {
 
 	// http://junit-team.github.io/junit/javadoc/latest/
 
 	public static void main(String[] args) {
 
-		Result result = JUnitCore.runClasses(TestFailureJunit.class);
+		Result result = JUnitCore.runClasses(Test05_DescriptionJunit.class);
+		
+		// ...
+		Description obj = Description.createSuiteDescription(Test05_DescriptionJunit.class);
 
 		System.out.println("------------------ From Result ----------------");
 
@@ -30,9 +33,17 @@ public class TestFailureRunner {
 		
 		for (Failure f : fail) {
 			System.out.println();
+
+			Description d = f.getDescription();
+			
+			System.out.println("Class Name : " + d.getClassName());
+			System.out.println("Display Name : " + d.getDisplayName());
+			System.out.println("Method Name : " + d.getMethodName());
+			System.out.println();
 			System.out.println("Exception Message : " + f.getMessage());
 			System.out.println("Stack Trace : " + f.getTrace());
 			System.out.println("Test Header : " + f.getTestHeader());
+			
 			System.out.println("===================+++++++++++++++++================");
 		}
 	}
