@@ -5,8 +5,14 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ TestBeforeAfter.class, TestCsv.class, TestDataBase.class,
-		TestError.class, TestJunit.class })
+@SuiteClasses({ 
+	Test07_Error.class, 
+	Test08_BeforeAfter.class, 
+	Test09_DataBase.class,	
+	Test10_Csv.class, 
+	TestJunit.class 
+	})
+
 public class TestMySuite {
 
 }

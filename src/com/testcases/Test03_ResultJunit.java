@@ -11,6 +11,7 @@ public class Test03_ResultJunit extends Assert {
 	
 	@Test
 	public void testIsoCode() {
+		// expects C:\\currencycodes.xml or com/resource/currencycodes.xml
 		CodeProperties p = CodePropertiesLookup.getCodeProperties("AOA");
 		System.out.println("Currency Code : " + p.getCurrencyCode());
 		System.out.println("Currency Name : " + p.getCurrencyName());
@@ -27,6 +28,7 @@ public class Test03_ResultJunit extends Assert {
 	@Test
 	public void testNumCode() {
 		CodeProperties p = CodePropertiesLookup.getCodeProperties("952");
+//		assertEquals("952", p.getCurrencyCode());
 		assertEquals("9521", p.getCurrencyCode());
 		assertEquals("CFA Franc BCEAO", p.getCurrencyName());
 		assertEquals(0, p.getFractionDigits());

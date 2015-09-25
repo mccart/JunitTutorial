@@ -15,11 +15,11 @@ public class TestRunner {
 		JUnitCore unit = new JUnitCore();
 		unit.addListener(new CustomeListener());
 		Result result = unit.run(
-				TestCsv.class,
-				TestError.class,
+				Test10_Csv.class,
+				Test07_Error.class,
 				TestJunit.class,
-				TestBeforeAfter.class,
-				TestDataBase.class);
+				Test08_BeforeAfter.class,
+				Test09_DataBase.class);
 		
 //		Result result = JUnitCore.runClasses(TestJunit.class);
 //		Description obj = Description.createSuiteDescription(TestJunit.class);

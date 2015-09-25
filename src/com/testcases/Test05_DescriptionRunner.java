@@ -32,13 +32,14 @@ public class Test05_DescriptionRunner {
 		List<Failure> fail = result.getFailures();
 		
 		for (Failure f : fail) {
-			System.out.println();
 
 			Description d = f.getDescription();
 			
+			System.out.println();
 			System.out.println("Class Name : " + d.getClassName());
 			System.out.println("Display Name : " + d.getDisplayName());
 			System.out.println("Method Name : " + d.getMethodName());
+			
 			System.out.println();
 			System.out.println("Exception Message : " + f.getMessage());
 			System.out.println("Stack Trace : " + f.getTrace());

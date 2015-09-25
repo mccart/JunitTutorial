@@ -28,10 +28,10 @@ public class Test06_RunListenerRunner {
 		Result result = unit.run( 
 				Test06_RunListenerJunit.class, 
 //		        Test06_RunListenerError.class
-				TestError.class,
-				TestBeforeAfter.class,
-				TestDataBase.class,
-				TestCsv.class
+				Test07_Error.class,
+				Test08_BeforeAfter.class,
+				Test09_DataBase.class,
+				Test10_Csv.class
 				); 
 
 
@@ -48,10 +48,10 @@ public class Test06_RunListenerRunner {
 		List<Failure> fail = result.getFailures();
 
 		for (Failure f : fail) {
-			System.out.println();
 
 			Description d = f.getDescription();
 
+			System.out.println();
 			System.out.println("Class Name : " + d.getClassName());
 			System.out.println("Display Name : " + d.getDisplayName());
 			System.out.println("Method Name : " + d.getMethodName());

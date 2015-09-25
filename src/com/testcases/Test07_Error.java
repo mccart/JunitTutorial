@@ -8,7 +8,7 @@ import com.mapper.CodeProperties;
 import com.mapper.CodePropertiesLookup;
 
 //@Ignore
-public class TestError {
+public class Test07_Error {
 /*
   	@Test(expected=NullPointerException.class)	// fail
 	public void testInvalidCode() {	// IllegalArgumentException

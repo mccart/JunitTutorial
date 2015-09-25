@@ -7,7 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 
-public class TestBeforeAfter {
+public class Test08_BeforeAfter {
 	
 	@BeforeClass
 	public static void beforeClass() {

@@ -11,6 +11,7 @@ public class Test02_AssertJunit extends Assert {
 	
 	@Test
 	public void testIsoCode() {
+		// expects C:\\currencycodes.xml or com/resource/currencycodes.xml
 		CodeProperties p = CodePropertiesLookup.getCodeProperties("AOA");
 		System.out.println("Currency Code : " + p.getCurrencyCode());
 		System.out.println("Currency Name : " + p.getCurrencyName());

@@ -17,7 +17,7 @@ import com.mapper.CodePropertiesLookup;
 //	http://javacsv.sourceforge.net/
 	
 	
-public class TestCsv extends Assert {
+public class Test10_Csv extends Assert {
 	
 	private static CsvReader reader = null;
 	private static CsvReader count = null;
@@ -27,7 +27,7 @@ public class TestCsv extends Assert {
 	private static String expected[][] = null;
 	
 	private  static String getPath() {
-		URL loc = TestCsv.class.getClassLoader().getResource("./");
+		URL loc = Test10_Csv.class.getClassLoader().getResource("./");
 		String path = loc.getPath();
 		System.out.println(path);
 //		/C:/Users/Family/Projects/Junit/bin/

@@ -23,7 +23,7 @@ public class Test01_CoreJunit {
 //		fail("Not yet implemented");
 	}
 
-//	moved to runner...
+//	moved to test runner...
 //	public static void main(String[] args) {
 //		JUnitCore.runClasses(Test01_CoreJunit.class);
 //	}

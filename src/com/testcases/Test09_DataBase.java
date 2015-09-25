@@ -18,7 +18,7 @@ import com.mapper.CodePropertiesLookup;
 
 
 
-public class TestDataBase extends Assert {
+public class Test09_DataBase extends Assert {
 	
 	private static Connection con = null;
 	private static PreparedStatement stm = null;

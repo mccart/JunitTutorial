@@ -8,16 +8,17 @@ import junit.framework.TestCase;
 public class TestFailure extends TestCase {
 	@Override
 	protected void setUp(){
-		//System.err.println("=======Set up==========");
+		System.err.println("=========Set up==========");
 	}
 	
 	@Override
 	 protected  void tearDown(){
-		//System.err.println("=========Tear Down=======");
+		System.err.println("=========Tear Down=======");
 	}
 	
 	@Test
 	public void testCaseThree(){
+		System.err.println("======Test Case Three=====");
 		Assert.fail("Failed By User");
 	}
 }
